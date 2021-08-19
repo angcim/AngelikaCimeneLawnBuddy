@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/**** Applied to All and Classes *****/
+body{
+  background-image: linear-gradient(to right, rgba(33, 150, 243, 0.8) , rgba(22, 177, 97, 0.8));
+  margin: auto;
+  font-family: "Lato";
+}
+
+.d-flex{
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.flex{
+  display: flex;
+}
+
+.background{
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.white{
+  background-color: #fff;
+}
+
+.corners{
+  border-radius: 4px;
+}
+
+button{
+  border: none;
+}
+
+#user-img, #user-name, #notifications, #alerts-tablet, #employees-desktop, #settings, #month, #dailyOne, #daily-dates, #saveSubmit, #employee-dd{
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+/* Settings */
+#settings{
+  width: 200px;
+  right: 0;
+  font-size: 20px;
+  float: right;
+  opacity: 90%;
+  z-index: 1000;
+  position: fixed;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.fa-cog:hover{
+  color: #707070;
+}
+
+#settings p {
+  text-align: right;
+}
+
+#settings p:hover {
+  color: #707070;
+}
+
+/* Months */
+#month{
+  right: 0;
+  float: right;
+  opacity: 95%;
+  z-index: 1000;
+  position: fixed;
+}
+
+#month .card-header{
+  background-color: #C7E0EF;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+}
+
+#month h5{
+  color: #074469;
+}
+
+.highlight{
+  background-color: #E0EEF6;
+}
+
+
+/* Daily Schedule */
+.daily-blue, .daily-blue2{
+  background-color: #D2F0FC;
+  opacity: 90%;
+}
+
+.daily-orange{
+  background-color: #FCEAD2;
+  opacity: 90%;
+}
+
+.daily-green{
+  background-color: #A9F4C3;
+  opacity: 80%;
+}
+
+h2{
+  color: #fff;
+}
+
+#dailyOne{
+    width: 400px;
+    left: 28%;
+    font-size: 20px;
+    opacity: 90%;
+    z-index: 1000;
+    position: fixed;
+    background-color: #D2F0FC;
+    margin-top: 1.75em;
+}
+
+#close-dailyOne{
+  text-align: right;
+  font-size: 14px;
+}
+
+#name-change{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#work-change{
+  font-weight: normal;
+  font-size: 18px;
+  color: #777777;
+}
+
+#hr-change{
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+}
+
+#daily-dates{
+  font-size: 16px;
+  opacity: 90%;
+  top: 6.5em;
+  left: 1em;
+  z-index: 1000;
+  position: fixed;
+  background-color: #D2F0FC;
+  margin-top: 1.75em;
+}
+/**** Main Menu ****/
+
+.fa-cog{
+  color: #CBC7C7;
+  font-size: 30px;
+}
+
+h1{
+  color: #074469;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#logo {
+  height: 50%;
+}
+
+#user-img{
+  border-radius: 50%;
+}
+
+/**** Header ****/
+
+#date-range{
+  padding: 0.5em;
+  text-align: center;
+}
+
+.date{
+  background-color: #C7E0EF;
+  padding: 0.35em;
+  font-size: 18px;
+}
+
+#date-range p{
+color: #777777;
+}
+
+#date-range h5{
+color: #074469;
+}
+
+.fa-calendar-alt{
+  color: #C7E0EF;
+  font-size: 23px;
+}
+
+/**** Projects / Add a Project ****/
+#projectName{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#projectName, #projectName button{
+  background-color: #074469;
+  color: #fff;
+  border: none;
+}
+
+#projectName button{
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#projectName h2{
+  font-size: 18px;
+  font-weight: 300;
+  text-align: right;
+}
+
+/* Employees */
+#employee-dd{
+  width: 200px;
+  font-size: 20px;
+  float: right;
+  opacity: 90%;
+  z-index: 1000;
+  position: fixed;
+}
+/**** Daily Calendar ****/
+
+#timeOfDay{
+  height: 400px;
+  overflow:scroll;
+}
+
+#timeOfDay p{
+  color: #A3A2A2;
+}
+
+#dailySchedule h5{
+  font-size: 25px;
+}
+
+#dailySchedule h6 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#dailySchedule i {
+  font-size: 30px;
+}
+
+.special{
+  border-top: 3px solid #E1E1E1;
+}
+
+.daily, #dailySchedule button, #dailySchedule i{
+  background-color: #1072AD;
+  color: #fff;
+}
+
+.card {
+  border: none;
+  border-radius: 5px;
+}
+
+.card-header:first-child{
+    border-radius: 5px 5px 0 0;
+}
+
+#employees-mobile button{
+    background-color: #fff;
+    color: #074469;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* WEEKLY TIMESHEET */
+th, td{
+  text-align: center;
+  font-weight: 400;
+}
+
+ table{
+  color: #074469;
+}
+
+.week-date{
+  color: #1B78B1;
+}
+
+.left{
+  text-align: left
+}
+
+.zero{
+  font-weight: 200;
+  color: #B2B8BC;
+}
+
+ td p {
+  background-color: #F0F7FB;
+}
+
+ td{
+  padding: 4em;
+}
+
+#dailySchedule i:hover{
+  color: #074469;
+}
+
+#week-timesheet .card-header{
+  color: #fff;
+  background-color: #4795C4;
+}
+
+#week-timesheet h5{
+  font-size: 25px;
+  margin-top: 0.5em;
+}
+
+ .table td, .table th {
+    vertical-align: middle;
+}
+
+#week-timesheet #add-job, #add-job2{
+  background-color: #fff;
+  color: #7DAA6C;
+  text-align: right;
+  padding-right: 1.5em;
+  font-size: 20px;
+}
+
+textarea{
+  border: none;
+  background-color: #F0F7FB;
+  width: 100%;
+}
+
+form label{
+  font-size: 20px;
+}
+
+#save{
+  background-color: #6FACD1;
+}
+
+#submit{
+  background-color: #4795C4;
+}
+
+#save, #submit{
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+}
+
+#saveSubmit{
+  width: 500px;
+  left: 25em;
+  font-size: 20px;
+  opacity: 90%;
+  z-index: 1000;
+  position: fixed;
+}
+
+#close-submit{
+  text-align: right;
+}
+
+/* TO DO LIST */
+
+#toDoList .card-header{
+  color: #fff;
+  background-color: #499F6D;
+  font-size: 25px;
+}
+
+#add-job2 {
+  width: 100%;
+}
+
+/* RECENT ACTIVITY */
+
+#recentActivity .card-header{
+  color: #fff;
+  background-color: #31918E;
+  font-size: 25px;
+}
+
+#history h5, #history p {
+  color: #656565;
+}
+
+.recent-date, .recent-time{
+  color: #31918E !important;
+}
+
+.recent-time{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.recent-date{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#history{
+  height: 300px;
+  overflow:scroll;
+}
+
+.circle{
+  border-radius: 50%;
+}
+
+footer, footer a{
+  color: #fff;
+  text-align: center;
+}
+
+ .table {
+  color: #074469 !important;
+}
+
+/* ***** TABLETS ***** */
+@media only screen and (min-width: 600px) {
+
+  #user-img, #user-name, #alerts-tablet{
+    display: block;
+  }
+
+  .d-flex{
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .flex{
+    justify-content: center;
+  }
+
+  #alerts-tablet .card-header{
+    color: #fff;
+    background-color: #E6CE45;
+    font-size: 20px;
+  }
+
+  #alerts-tablet span{
+    color: #D56363;
+    font-weight: bold;
+  }
+
+  #alerts-tablet a{
+    color: #4F9D37;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 40px;
+}
+
+#logo img{
+    height: 50px;
+}
+
+#save, #submit {
+    width: 100%;
+}
+
+}
+
+/* ***** TABLETS ***** */
+@media only screen and (min-width: 1000px) {
+
+  .desktop-flex{
+    display: flex;
+    justify-content: space-between
+  }
+  #addToList, #alerts-tablet, #employees-mobile{
+    display: none;
+  }
+
+  #notifications, #employees-desktop{
+    display: block;
+  }
+
+  #notifications .card-header{
+    color: #fff;
+    background-color: #E6CE45;
+    font-size: 20px;
+  }
+
+  #notifications span{
+    color: #D56363;
+    font-weight: bold;
+  }
+
+  #notifications a{
+    color: #4F9D37;
+    font-weight: bold;
+  }
+
+  #employees-desktop button{
+      background-color: #fff;
+      color: #074469;
+      border: none;
+      font-weight: 500;
+      font-size: 20px;
+  }
+
+  .flexElements{
+    display: flex !important;
+  }
+
+  #sectionOne{
+    width: 30% !important;
+  }
+
+  #sectionTwo{
+    width: 50% !important;
+  }
+
+  #sectionThree{
+    width: 20% !important;
+  }
+
+  #notifications .row{
+    justify-content: center !important;
+  }
+
+  #timeOfDay{
+    height: 990px;
+    overflow:scroll;
+  }
+
+  #history{
+    height: 480px;
+    overflow:scroll;
+  }
+
+}
